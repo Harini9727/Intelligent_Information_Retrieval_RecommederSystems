@@ -22,3 +22,7 @@ since the recommendations will be based on the embeddings, queries that simply a
 Instead, queries that ask for 'similar' to a particular business would be good.
 For example,
  "List five restaurants that are similar to 'Pai Northern Thai Kitchen' in Toronto" -- fOR THIS we  identify restaurants in toronto from the original businesses table.  Then  compare each of their embeddings (by looking up in the business embeddings) against the embedding of  'Pai Northern Thai Kitchen'.  Select the top five similar restaurants and displayed their name, stars and categories.
+Some of the queries are:
+- Best restaurants in Toronto :Shows the top 5 or so as results. Results are sorted according to the 'stars', then 'review_count', then 'name' (alphabetically).  Shows the stars, name (NOT the business_id), number of reviews and 'categories' of each returned restaurant.
+- Best Chinese restaurants in Las Vegas -- same comments as above.
+- Pubs in Philadelphia that are WheelchairAccessible
